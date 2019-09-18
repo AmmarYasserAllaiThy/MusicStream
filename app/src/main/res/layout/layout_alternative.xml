@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/outer_margin"
+            android:layout_marginStart="@dimen/outer_margin"
+            android:layout_marginTop="@dimen/outer_margin"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/url_ET"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:autoLink="none"
+                    android:ems="10"
+                    android:hint="@string/url_hint"
+                    android:inputType="textUri"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000" />
+
+                <ImageButton
+                    android:id="@+id/download_Img_Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/download_song"
+                    android:src="@drawable/ic_queue_music_black_24dp" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:dividerHeight="3dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/outer_margin"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/outer_margin"
+                android:layout_marginStart="@dimen/outer_margin"
+                android:layout_marginTop="@dimen/outer_margin"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_skip_prev"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/play_fab"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_play"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/stop_fab"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_stop" />
+
+                <ImageButton
+                    android:id="@+id/next"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_skip_next" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

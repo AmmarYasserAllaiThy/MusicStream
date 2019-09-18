@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin_hor">64dp</dimen>
+    <dimen name="fab_margin_ver">32dp</dimen>
+    <dimen name="outer_margin">16dp</dimen>
+    <dimen name="list_margin">8dp</dimen>
+    <dimen name="imgBtn_margin">5dp</dimen>
+</resources>
+

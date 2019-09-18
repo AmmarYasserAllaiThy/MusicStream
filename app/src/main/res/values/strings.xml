@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Music Stream</string>
+    <string name="action_settings">Settings</string>
+    <string name="url_hint">Paste song url here!</string>
+    <string name="download_song">download song</string>
+    <string name="about_me">About me</string>
+    <string name="url">https://dl.dndser.com/dl/7h/hamo-beka/singels/Dndnha.Com.Hamo.Beka.Rab.Elkon.Maizna.Bmiza.mp3</string>
+    <string name="song_link">Song link</string>
+</resources>
